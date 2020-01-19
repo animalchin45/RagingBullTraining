@@ -1,0 +1,24 @@
+{
+  "name": "ragingbull",
+  "version": "1.0.0",
+  "description": "Raging Bull Training",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w",
+    "autoprefix": "postcss public/css/styles.css -u autoprefixer -r",
+    "start": "node app.js",
+    "dev": "nodemon app.js -e js, ejs"
+  },
+  "author": "Tim O'Brien",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.19.1",
+    "postcss-cli": "^7.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
