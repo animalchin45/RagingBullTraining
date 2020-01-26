@@ -2,6 +2,8 @@ const express = require('express'),
 	  app 	  = express(),
 	  port    = process.env.PORT || 3000;
 
+require('dotenv').config({path: './keys.env'})
+
 const bullRoutes = require('./routes/index')
 
 

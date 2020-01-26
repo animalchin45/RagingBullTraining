@@ -1,0 +1,31 @@
+.phil {
+    padding: 1rem;
+    
+    &__content {
+        display: flex;
+	    flex-direction: row;
+        justify-content: center;
+        
+        & div {
+            flex-basis: 30%;
+	        padding: 2rem;
+        }
+    }
+
+    &__img {
+        width: 60rem;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .phil {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            
+            & img {
+                width: 90vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines one REM
+    font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+section {
+	margin: 0;
+	padding-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+	min-height: calc(100vh - 211px);
+    transition: opacity 1s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: $mobile-break) {
+	section {
+		// justify-content: center;
+		min-height: 100vh;
+	}
+}

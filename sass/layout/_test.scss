@@ -1,0 +1,48 @@
+.test {
+    margin-bottom: 7rem;
+
+    &__content {
+        width: 70%;
+
+        & ul { 
+            display: flex;
+	        flex-wrap: wrap;
+	        justify-content: center;
+	        list-style: none;
+        }
+
+        & li {
+            border-right: 2px solid $color-dark-accent;
+	        border-bottom: 3px solid $color-dark;
+	        display: flex;
+	        flex-basis: 40%;
+            margin: 30px;
+            
+            & div {
+                padding: 5px 20px;
+
+                & h2 {
+                    color: $color-primary;
+	                margin-bottom: 10px;
+                }
+
+                & p {
+                    margin: 5px auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .test {
+        &__content {
+            width: 90vw;
+        }
+        & li {
+            flex-direction: column;
+		    flex-basis: 100%;
+		    margin-bottom: 5rem;
+        }
+    }
+}

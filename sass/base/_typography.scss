@@ -1,0 +1,41 @@
+body {
+	font-family: 'Overpass', sans-serif;
+	background-color: $color-light;
+    color: $color-dark;
+    
+    & p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: $default-font-size;
+	    line-height: 2.5rem;
+	    letter-spacing: 1px;
+	}
+	
+	& a {
+		font-size: $default-font-size;
+	}
+
+	& h4 {
+		font-size: $default-font-size;
+	}
+	
+	& .title-h2 {
+		color: $color-primary;
+	}
+}
+
+h1 {
+        font-size: 3rem;
+		font-weight: 900;
+		color: $color-primary;
+		text-shadow: -1px -1px 0px $color-dark;
+	}
+	
+h2 {
+        font-size: 2rem;
+	    font-weight: 700;
+	    margin: 0
+	}
+
+.social-icon {
+	font-size: 4rem;
+}

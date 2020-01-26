@@ -1,0 +1,61 @@
+.contact {
+    flex-direction: row;
+    justify-content: center;
+    
+    &-column {
+        display: flex;
+        flex-direction: column;
+        
+        & div {
+            margin-bottom: 2rem;
+
+            &:first-of-type {
+                margin-right: 5rem;
+            }
+        }
+
+        & a {
+            margin-bottom: 3rem;
+            color: $color-dark;
+            font-size: $default-font-size;
+            transition: all 250ms;
+            
+            &:hover {
+                box-shadow: 0 2px $color-dark;
+            }
+        }
+    }
+
+    & h2 {
+        margin-bottom: 5px;
+    }
+
+    & #map {
+        height: 50rem;
+	    width: 80rem;
+	    margin: 2.5rem;
+    }
+}
+
+@media (max-width: $mobile-break) {
+	.contact {
+		flex-direction: column-reverse;
+        margin: 0;
+        
+        & div:first-of-type {
+            margin: 1.5rem 0 0 0;
+        }
+
+        &-column {
+            margin: 0;
+		    padding: 0;
+		    width: 90vw;
+        }
+
+        & #map {
+            height: 70rem;
+		    width: 90vw;
+            margin: 0;
+        }
+	}
+}

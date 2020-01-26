@@ -1,0 +1,27 @@
+.home {
+
+    &__tagline{
+        text-align: center;
+    }
+
+    &__img {
+        width: 75rem;
+    }
+
+    & p {
+        width: 100rem;
+	    padding: 1rem;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .home {
+        & p {
+            width: 90vw;
+        }
+
+        & img {
+            width: 80vw;
+        }
+    }
+}

@@ -36,7 +36,9 @@ router.get('/testimonials', (req, res) => {
 });
 
 router.get('/contact', (req, res) => {
-	res.render('contact');
+	res.render('contact', {
+		apiKey: process.env.MAPS_KEY
+	});
 });
 
 // external links

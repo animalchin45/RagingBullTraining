@@ -1,4 +1,4 @@
 node_modules/
-sass/
+keys.env
 v1_styles/
 ragingbull_v1.code-workspace
